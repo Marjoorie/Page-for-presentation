@@ -1,0 +1,228 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "logo description"
+        "social description"
+        "mision vision"
+        "message message";
+    grid-template-columns: 2fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    grid-area: description;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mision {
+    grid-area: mision;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vision {
+    grid-area: vision;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social {
+    grid-area: social;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social li {
+    margin: 10px 0;
+}
+
+.social a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}
+
+.message {
+    grid-area: message;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+img.logoss{
+    height: 30px;
+    max-width: 100%
+}
+
+
+
+@media (max-width: 768px) {
+* {
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: rgb(61, 122, 122);
+}
+
+
+header {
+
+    background-color: #4f695077;
+    color: rgb(184, 183, 192);
+    padding: 5px 0;
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "logo description"
+        "social description"
+        "mision vision"
+        "message message";
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff00;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #dddddd00;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.148);
+}
+
+.description {
+    grid-area: description;
+    background-color: #ffffffab;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 1px solid #dddddd6e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    font-size: 15px;
+}
+
+.mision {
+    grid-area: mision;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vision {
+    grid-area: vision;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social {
+    grid-area: social;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social li {
+    margin: 10px 0;
+}
+
+.social a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}
+
+.message {
+    grid-area: message;
+    display: flexbox;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+img.logoss{
+    height: 30px;
+    max-width: 100%
+}
+}
