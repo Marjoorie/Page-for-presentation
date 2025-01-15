@@ -1,0 +1,85 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "logo description"
+        "social description"
+        "mision vision"
+        "message message";
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.logo, .description, .mision, .vision, .social, .message {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo, .mision, .vision, .social, .message {
+    text-align: center;
+}
+
+img.logoss {
+    height: 30px;
+    max-width: 100%;
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social li {
+    margin: 10px 0;
+}
+
+.social a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+            "logo"
+            "description"
+            "social"
+            "mision"
+            "vision"
+            "message";
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .logo, .description, .mision, .vision, .social, .message {
+        padding: 15px;
+    }
+}
